@@ -1,0 +1,16 @@
+<h1>Bem-vindo à Clínica</h1>
+<p>Por favor, escolha uma das opções abaixo:</p>
+
+<div>
+  <button (click)="geral()"> Senha Geral</button>
+  <button (click)="preferencial()">Senha Preferencial </button>
+  <button (click)="exames()"> Entrega Examames  </button>
+</div>
+
+<div>
+  <h1>Senhas Chamadas:</h1>
+  <h3>Senha Geral: {{ senhaGeralChamada }}</h3>
+  <h3>Senha Preferencial: {{ senhaPreferencialChamada }}</h3>
+  <h3>Entrega de Exames: {{ senhaExamesChamada }}</h3>
+</div>
+
