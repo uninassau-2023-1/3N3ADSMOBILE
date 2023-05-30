@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "unused-imports/no-unused-imports": "error"
+  },
+  "plugins": [
+    "unused-imports"
+  ],
+  "extends": [
+    "@rocketseat/eslint-config/react"
+  ]
+}

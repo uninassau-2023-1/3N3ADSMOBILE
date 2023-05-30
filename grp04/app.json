@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "MedToken",
+    "slug": "MedToken",
+    "version": "1.0.0",
+    "githubUrl":"https://github.com/carloosf/MedToken",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "primaryColor":"#293645",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#293645"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logo-ofc.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
