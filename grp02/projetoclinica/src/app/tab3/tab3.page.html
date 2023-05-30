@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tab 3 - Relatórios
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let relatorio of relatorios">
+      {{ relatorio }}
+    </ion-item>
+  </ion-list>
+
+  <ion-card>
+    <ion-card-header>
+      Total de Senhas Emitidas
+    </ion-card-header>
+    <ion-card-content>
+      {{ totalSenhasEmitidas }}
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Total de Senhas Gerais Emitidas
+    </ion-card-header>
+    <ion-card-content>
+      {{ totalSenhasGeraisEmitidas }}
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Total de Senhas Preferenciais Emitidas
+    </ion-card-header>
+    <ion-card-content>
+      {{ totalSenhasPreferenciaisEmitidas }}
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Total de Exames Emitidos
+    </ion-card-header>
+    <ion-card-content>
+      {{ totalExamesEmitidos }}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+

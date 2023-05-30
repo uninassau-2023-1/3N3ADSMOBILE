@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tab 2
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button expand="full" (click)="chamarSenhaGeral()">Chamar Senha Geral</ion-button>
+  <ion-button expand="full" (click)="gerarSenhaPreferencial()">Gerar Senha Preferencial</ion-button>
+  <ion-button expand="full" (click)="chamarSenhaExames()">Chamar Senha Exames</ion-button>
+
+  <ion-list>
+    <ion-item *ngFor="let senha of ultimasSenhas">
+      {{ senha }}
+    </ion-item>
+  </ion-list>
+</ion-content>
