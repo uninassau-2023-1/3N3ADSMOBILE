@@ -17,12 +17,14 @@ export default StyleSheet.create({
     width: '100%',
   },
   title: {
+    marginBottom: 8,
     color: '#fff',
     fontSize: 25,
     fontWeight: 'bold',
     width: '100%',
     textAlign: 'center',
     textAlignVertical: 'center',
+    gap: 5,
   },
   titleRecords: {
     margin: '5%',
@@ -40,5 +42,9 @@ export default StyleSheet.create({
     alignSelf: 'center',
     position: 'relative',
     bottom: 20,
+  },
+  welcome: {
+    height: 80,
+    alignItems: 'center',
   },
 })

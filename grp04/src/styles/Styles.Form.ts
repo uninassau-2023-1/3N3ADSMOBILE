@@ -41,15 +41,12 @@ export default StyleSheet.create({
   title: {
     color: '#fff',
     fontSize: 30,
-    fontFamily: 'Oswald_400Regular',
   },
   label: {
     color: 'white',
     fontSize: 17,
     alignSelf: 'flex-start',
     marginBottom: 10,
-
-    fontFamily: 'Oswald_400Regular',
   },
   logo: {
     position: 'relative',
@@ -73,7 +70,6 @@ export default StyleSheet.create({
     fontSize: 12,
     fontWeight: 'bold',
     textAlign: 'center',
-    fontFamily: 'Oswald_400Regular',
   },
   selectedButton: {
     backgroundColor: 'rgb(122, 62, 62)',

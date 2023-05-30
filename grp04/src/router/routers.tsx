@@ -21,8 +21,8 @@ function Routes() {
     <NavigationContainer theme={theme}>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Form" component={Form} />
-        <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Relatorio" component={Relatorio} />
+        <Stack.Screen name="Home" component={Home} />
       </Stack.Navigator>
     </NavigationContainer>
   )

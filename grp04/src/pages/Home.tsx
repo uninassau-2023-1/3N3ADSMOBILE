@@ -56,8 +56,6 @@ export default function Home() {
     const interval = setInterval(fetchTokensRecords, 5000)
     return () => clearInterval(interval)
   }, [])
-  console.log(tokensRecords)
-
   const handlerReturn = () => {
     navigation.navigate('Form')
   }
@@ -73,10 +71,11 @@ export default function Home() {
           {name === null ? (
             <Text style={styles.title}>Olá, Convidado!</Text>
           ) : (
-            <Text style={styles.title}>Olá, {name}</Text>
+            <View style={styles.welcome}>
+              <Text style={styles.title}>Olá, {name}</Text>
+              <Text style={styles.title}>Seu Token:</Text>
+            </View>
           )}
-
-          <Text style={styles.title}>Seu Token</Text>
         </View>
         {token === null ? (
           <Button title="Obter Token" onPress={handlerReturn} />

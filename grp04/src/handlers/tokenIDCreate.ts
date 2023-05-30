@@ -19,10 +19,9 @@ const TokenIDCreate = async (tipoFicha) => {
     } else {
       newToken = `${Data(false)}${HandlerPrioridade(tipoFicha)}${id}`
     }
-    console.log(newToken)
     return newToken
   } catch (err) {
-    console.log('ERROR TOKENIDCREATE:' + err)
+    console.error('ERROR TOKENIDCREATE:' + err)
     return err
   }
 }

@@ -2,19 +2,18 @@ import React, { useEffect, useState } from 'react'
 import { Text, View } from 'react-native'
 import Data from '../handlers/handlerData'
 import GetMedtoken from '../services/GetMedtoken'
-import { GetMonth, GetYear } from '../handlers/filtrosRelatorios'
 import StylesRelatorio from '../styles/Styles.Relatorio'
 import Button from '../components/Button'
 import { useNavigation } from '@react-navigation/native'
 import Logo from '../components/Logo'
-
+import { getMonth, getYear, getMonthName } from '../handlers/filtrosRelatorios'
 const styles = StylesRelatorio
 
 export default function Relatorio() {
   const navigation = useNavigation()
   const [tokensRecords, setTokensRecords] = useState([])
   const [tokensToday, setTokensToday] = useState([])
-  const [tokensMouth, setTokensMouth] = useState([])
+  const [tokensMonth, setTokensMonth] = useState([])
   const [tokensYear, setTokensYear] = useState([])
 
   useEffect(() => {
@@ -24,15 +23,15 @@ export default function Relatorio() {
         const [records] = await GetMedtoken()
         setTokensRecords(records.filter((record) => record.date))
         setTokensToday(records.filter((record) => record.date === Data(true)))
-        setTokensMouth(
+        setTokensMonth(
           records.map(
             (record) =>
-              GetYear(record.date) === currentDate.getMonth() &&
+              getYear(record.date) === currentDate.getMonth() &&
               record.preferencia,
           ),
         )
         const years = records
-          .filter((record) => GetMonth(record.date) === currentDate.getMonth())
+          .filter((record) => getMonth(record.date) === currentDate.getMonth())
           .map((record) => {
             return [record.date, record.prioridade]
           })
@@ -60,7 +59,8 @@ export default function Relatorio() {
             Registros hoje ({new Date().getDate()}): {tokensToday.length}
           </Text>
           <Text style={styles.stats}>
-            Registros esse mês ({new Date().getMonth()}): {tokensMouth.length}
+            Registros esse mês ( {getMonthName(new Date().getMonth())} ):{' '}
+            {tokensMonth.length}
           </Text>
           <Text style={styles.stats}>
             Registros neste ano ({new Date().getFullYear()}):{' '}

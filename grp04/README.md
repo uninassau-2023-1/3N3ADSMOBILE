@@ -1,8 +1,49 @@
-# Alunos
+# [MedToken]
 
-* Amanda Gabriela Bernardo da Costa	01566793
-* Carlos Augusto Ferreira da Silva	01564896
-* Clovis Vitor dos Santos Tavares	01564866
-* Maria Christina Santos Barbosa	01565538
-* Matheus Sena Diniz	01565579
-* Samara Vitória da Silva	01565630
+## :page_facing_up: Sobre o Projeto
+- Este projeto trata-se de um aplicativo de tokens voltados a hospitais. O projeto é para um trabalho da faculdade.
+- Criado em 20/05/2023
+---
+
+## :man_technologist: Autores
+
+<table class="author">
+  <tr>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/ccarlossilv/">
+        <img src="https://avatars.githubusercontent.com/carloosf" 
+        width="100px;" alt="Carlos Silva"/>
+        <br/>
+        <sub>
+          <b>Carlos Silva</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/iamsamarav/">
+        <img src="https://avatars.githubusercontent.com/iamsamarav" 
+        width="100px;" alt="Samara Vitoria"/>
+        <br/>
+        <sub>
+          <b>Samara Vitoria</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>   
+
+<h4>Carlos Silva - Contatos</h4>
+Linkedin: [https://www.linkedin.com/in/ccarlossilv/]
+   
+E-mail: contato.carlossilvaf@gmail.com
+   
+<h4>Samara Vitória - Contatos</h4>
+Linkedin: [https://www.linkedin.com/in/iamsamarav/]
+   
+E-mail: devsamaravitoria@gmail.com
+
+<hr />
+
+Foram criados separadamente os arquivos front-end e back-end, então inicie as aplicações de forma separada.
+
+Link do Back: [https://github.com/carloosf/MedToken-API]
