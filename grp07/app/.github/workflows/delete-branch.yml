@@ -1,0 +1,20 @@
+name: Delete Branch
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  delete-branch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+
+      - name: Delete branch
+        run: |
+          git config --global user.name "Leandro Carlos"
+          git config --global user.email "leandro.carlosleo2015@gmail.com"
+          git push origin --delete ${{ github.head_ref }}
