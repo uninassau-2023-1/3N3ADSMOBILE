@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Relatórios
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Total de Senhas Geradas</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <h3>{{ totalSenhasGeradas }}</h3>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Senhas Geradas por Tipo</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let tipo of senhasGeradasPorTipo | keyvalue">
+          {{ tipo.key }}: {{ tipo.value }}
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Senhas Atendidas</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <h3>{{ senhasAtendidas }}</h3>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Senhas Não Atendidas</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <h3>{{ senhasNaoAtendidas }}</h3>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content class="ion-text-center">
+      <ion-button color="danger" (click)="apagarDados()">Limpar</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
